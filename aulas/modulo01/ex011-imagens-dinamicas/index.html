@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 11</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pequena.png" type="image/png">
+
+        <source media="(max-width: 1000px)" srcset="imagens/media.png" type="image/png">
+       
+        <img src="imagens/grande.png" alt="imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+    
+    <audio src="midia/Sigma - Find Me ft. Birdy.mp3" controls autoplay></audio>
+    <br>
+    <audio preload="auto" autoplay controls loop>
+        source src="midia/Sigma - Find Me ft. Birdy.mp3" types="audio/mpeg">
+        <source src="midia/Sigma - Find Me ft. Birdy.mp3" type="audio/ogg">
+        <source src="midia/Sigma - Find Me ft. Birdy.mp3" type="audio/wav">
+    </audio>
+    <p>Coloquei um modificador chamado loop nesse segundo audio pra ele ficar tocando pra sempre</p>
+    
+    <br>
+    <a href="midia/Sigma - Find Me ft. Birdy.mp3">Clique aqui para baixar o audio em MP3</a>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Esse video está hospedado no meu próprio servidor</p>
+    
+    <video src="midia/meuvideo.mp4" width="700px" controls></video>
+
+    <p>Agora para funcionar com toooodos os navegadores</p>
+    <video controls>
+        <source src="" type="video/mp4">
+        <source src="" type="video/mp4">
+        <source src="" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+    </video>
+    <p>A ordem tem influencia, ele vai tentando carregar cada um. Quantos mais arquivos, maior a compatibilidade para varios navegadores</p>
+    <p>Videos hospedados no proprio site vao consumir muito trafego de dados/consumo de banda, fica pesado e caro para o cliente</p>
+
+    <h1>Inserindo videos do youtube, nao estao hospedado no seu server</h1>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=RHG0zoytz-5ARPEh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <p>Esse metodo nao consome os dados do seu server e sim do proprio youtube, ou seja, menos pesado para o site do cliente e menos caro. A questão é que qualquer pessoa pode acessar, entao caso seja um serviço de assinante, outras pessoas podem acessar esse video</p>
+
+</body>
+
+
+
+</html>
