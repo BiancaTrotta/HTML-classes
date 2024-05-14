@@ -19,6 +19,7 @@
         nav {
             background-color: rgb(161, 161, 161);
             padding: 3px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.477);
         }
 
         nav > a {
@@ -37,6 +38,8 @@
             background-color: white;
             padding: 10px;
             margin: 10px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.363);
         }
 
         article {
@@ -54,11 +57,19 @@
             padding: 1px;
             margin: 0px;
         }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
     </style>
 </head>
 <body>
-    <div></div>
-    <span></span>
+    <div style="background-color: brown;"> div é um box level</div>
+    <span style="background-color: brown;">span é um inline level</span>
     <p>Geralmente se usa div e tag, mas podemos criar com tags semanticas</p>
 
     <header>
@@ -73,7 +84,7 @@
     </header>
     <main>
         <section id="assuntos">
-
+            <p>esportes politica tecnologia</p>
         </section>
         <section id="noticias">
             <article>
@@ -88,6 +99,9 @@
     <footer>
         <p>Desenvolvido por mim k k k</p>
     </footer>
+    <div id="bola">
+
+    </div>
 
 
 
