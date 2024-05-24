@@ -1,32 +1,104 @@
+/*
+#c5ebd6
+#83e1ad
+#3ddc84
+#2fa866
+#1ac537
+#063d1e
+*/
+
 @charset "UTF-8";
 
-body {
-    background-color: rgb(187, 255, 187);
-    font-family: Arial, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+@font-face {
+    font-family: 'Android';
+    src: url('pacote-projeto-d010/fontes/idroid.otf') format('opentype');
+}
+
+:root{
+    
+    --cor0: #c5ebd6;
+    --cor1: #83e1ab;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue';
+    --fonte-android: 'Android';
+}
+
+/*
+Esse root é a arvore do css
+esse asterisco aí embaixo é quando eu quero colocar uma configuração em TUDO do html
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #c5ebd6;
+    font-family: var(--fonte-padrao), Helvetica, sans-serif;
+    
 }
 
 header {
     height: 150px;
     width: 100%;
-    background-image: linear-gradient(to bottom, rgb(82, 240, 82), rgb(27, 126, 27));
+    background-color: #1a5c37;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.532);
 }
 
-h1 {
-    text-align: center;
+header > h1{
     color: white;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.504);
+    font-family: var(--fonte-destaque)
 }
 
-#p-do-header {
-    text-align: center;
+header > p {
     color: white;
 }
 
-nav { 
+nav {
+    background-color: #1a5c37;
 }
 
-a {
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.351);
+}
+
+main h1 {
+    color: #063d1e;
+    font-family: var(--fonte-android);
+}
+
+main h2 {
+    color: #063d1e;
+    font-family: var(--fonte-android);
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    width: 60%;
+    margin: auto;
+    display: block;
+}
+
+footer {
+    background-color: #063d1e;
     color: white;
 }
